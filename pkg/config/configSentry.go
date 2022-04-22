@@ -10,7 +10,7 @@ type (
 		// - Sentry
 		SentryEnable          bool    `envconfig:"SENTRY_ENABLE" default:"false"`
 		SentryEnvironment     string  `envconfig:"SENTRY_ENVIRONMENT" default:"staging"`
-		SentryDSN             string  `envconfig:"SENTRY_DSN" default:""`
+		SentryDSN             string  `envconfig:"SENTRY_DSN" default:"https://sentry.dsn"`
 		SentryAppName         string  `envconfig:"SENTRY_APP_NAME" default:"leaf-example"`
 		SentrySampleRate      float64 `envconfig:"SENTRY_SAMPLE_RATE"`
 		SentryTraceSampleRate float64 `envconfig:"SENTRY_TRACE_SAMPLE_RATE"`

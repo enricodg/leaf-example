@@ -48,16 +48,16 @@ func run(container *dig.Container) error {
 				leafServer.WithHttpValidator(resource.Validator),
 				leafServer.WithHttpEnable(resource.ConfigApp.HttpEnable),
 			)).
-			//With(leafServer.NewMessaging(resource.MQ.Kafka,
-			//	leafServer.WithConsumerLogger(resource.Log),
-			//	leafServer.WithConsumerRegister(inbound.Messaging.Listener),
-			//	leafServer.WithConsumerEnable(resource.ConfigApp.MessagingEnable),
-			//)).
-			//With(leafServer.NewWorker(
-			//	leafServer.WithWorkerLogger(resource.Log),
-			//	leafServer.WithWorkerRegister(inbound.Worker.Work),
-			//	leafServer.WithWorkerEnable(resource.ConfigApp.WorkerEnable),
-			//)).
+			With(leafServer.NewMessaging(resource.MQ.Kafka,
+				leafServer.WithConsumerLogger(resource.Log),
+				leafServer.WithConsumerRegister(inbound.Messaging.Listener),
+				leafServer.WithConsumerEnable(resource.ConfigApp.MessagingEnable),
+			)).
+			With(leafServer.NewWorker(
+				leafServer.WithWorkerLogger(resource.Log),
+				leafServer.WithWorkerRegister(inbound.Worker.Work),
+				leafServer.WithWorkerEnable(resource.ConfigApp.WorkerEnable),
+			)).
 			Run()
 
 		tracer.Stop()
