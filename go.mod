@@ -8,32 +8,32 @@ require (
 	github.com/golang/mock v1.6.0
 	github.com/labstack/echo/v4 v4.7.2
 	github.com/labstack/gommon v0.3.1
-	github.com/paulusrobin/leaf-utilities/appRunner v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/cache/cache v0.0.0-20220420070753-f0289b1e394b
-	github.com/paulusrobin/leaf-utilities/cache/integrations/memcache v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/cache/integrations/redis v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/common v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/config v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/database/sql/integrations/gorm/mysql v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/database/sql/integrations/gorm/plugin/softDelete v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/database/sql/sql v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/encoding/json v0.0.0-20220420071653-80e4cae9f4d2
-	github.com/paulusrobin/leaf-utilities/logger/integrations/logrus v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/logger/logger v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/mandatory v0.0.0-20220420081700-6d04b27d3e05
-	github.com/paulusrobin/leaf-utilities/messageQueue/integrations/kafka v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/messageQueue/messageQueue v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/time v0.0.0-20220420071653-80e4cae9f4d2
-	github.com/paulusrobin/leaf-utilities/token v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/tracer/integrations/newRelic v0.0.0-20220420071653-80e4cae9f4d2
-	github.com/paulusrobin/leaf-utilities/tracer/integrations/sentry v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/tracer/tracer v0.0.0-20220420071653-80e4cae9f4d2
-	github.com/paulusrobin/leaf-utilities/translator v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/validator/integrations/v10 v10.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/validator/validator v0.0.0-20220420070019-7843b97718b6
-	github.com/paulusrobin/leaf-utilities/webClient/integrations/heimdall v0.0.0-20220422095901-cbdbd676731a
-	github.com/paulusrobin/leaf-utilities/webClient/webClient v0.0.0-20220420071653-80e4cae9f4d2
-	github.com/stretchr/testify v1.7.0
+	github.com/paulusrobin/leaf-utilities/appRunner v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/cache/cache v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/cache/integrations/memcache v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/cache/integrations/redis v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/common v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/config v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/database/sql/integrations/gorm/mysql v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/database/sql/integrations/gorm/plugin/softDelete v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/database/sql/sql v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/encoding/json v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/logger/integrations/logrus v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/logger/logger v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/mandatory v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/messageQueue/integrations/kafka v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/messageQueue/messageQueue v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/time v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/token v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/tracer/integrations/newRelic v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/tracer/integrations/sentry v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/tracer/tracer v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/translator v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/validator/integrations/v10 v10.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/validator/validator v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/webClient/integrations/heimdall v0.0.0-20220422115212-b6c0622d95f5
+	github.com/paulusrobin/leaf-utilities/webClient/webClient v0.0.0-20220422115212-b6c0622d95f5
+	github.com/stretchr/testify v1.7.1
 	go.uber.org/dig v1.14.1
 	gorm.io/gorm v1.23.4
 	gorm.io/plugin/optimisticlock v1.0.7
