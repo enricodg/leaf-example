@@ -30,5 +30,16 @@ func (u *ucServiceParameter) Update(ctx context.Context, request model.ServicePa
 		return model.ServiceParameterUpsertResponse{}, err
 	}
 
-	return u.FindByVariable(ctx, request.Variable)
+	serviceParameter, err := u.FindByVariable(ctx, request.Variable)
+	if err != nil {
+		return model.ServiceParameterUpsertResponse{}, err
+	}
+	if err := u.Outbound.Cache.ServiceParameter.Set(ctx, serviceParameter); err != nil {
+		u.resource.Log.Warn(leafLogger.BuildMessage(ctx,
+			"error on set cache service parameter",
+			leafLogger.WithAttr("variable", serviceParameter.Variable),
+			leafLogger.WithAttr("err", err)))
+	}
+
+	return serviceParameter, nil
 }

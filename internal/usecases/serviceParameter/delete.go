@@ -15,8 +15,9 @@ func (u *ucServiceParameter) Delete(ctx context.Context, variable string) error 
 		return err
 	}
 
-	//mandatory := leafMandatory.FromContext(ctx)
-	//serviceParam.DeletedBy = leafTypes.NewNullString(mandatory.User().Email())
+	if err := u.Outbound.Cache.ServiceParameter.RemoveByVariable(ctx, variable); err != nil {
+		return err
+	}
 
 	if err := u.Repositories.ServiceParameter.Delete(ctx, orm, serviceParam); err != nil {
 		return err

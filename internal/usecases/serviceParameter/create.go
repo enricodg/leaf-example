@@ -30,11 +30,19 @@ func (u *ucServiceParameter) Create(ctx context.Context, request model.ServicePa
 		return model.ServiceParameterUpsertResponse{}, err
 	}
 
-	return model.ServiceParameterUpsertResponse{
+	response := model.ServiceParameterUpsertResponse{
 		ID:          serviceParameter.BaseAuditable.ID,
 		Variable:    serviceParameter.Variable,
 		Value:       serviceParameter.Value,
 		Description: serviceParameter.Description,
 		Version:     serviceParameter.BaseAuditable.Version.Int64,
-	}, nil
+	}
+	if err := u.Outbound.Cache.ServiceParameter.Set(ctx, response); err != nil {
+		u.resource.Log.Warn(leafLogger.BuildMessage(ctx,
+			"error on set cache service parameter",
+			leafLogger.WithAttr("variable", serviceParameter.Variable),
+			leafLogger.WithAttr("err", err)))
+	}
+
+	return response, nil
 }
