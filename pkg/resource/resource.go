@@ -52,7 +52,7 @@ type (
 		// Tracer is utilities tracer
 		Tracer leafTracer.Tracer
 
-		// Token is utilities tracer
+		// Token is utilities token
 		Token leafToken.Token
 
 		// Translator

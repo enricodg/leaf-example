@@ -1,7 +1,7 @@
 package inbound
 
 import (
-	"github.com/enricodg/leaf-example/internal/leaf-example/inbound/http"
+	"github.com/enricodg/leaf-example/internal/inbound/http"
 	"go.uber.org/dig"
 )
 

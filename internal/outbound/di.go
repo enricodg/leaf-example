@@ -1,6 +1,8 @@
 package outbound
 
 import (
+	"fmt"
+	"github.com/enricodg/leaf-example/internal/outbound/repositories"
 	"go.uber.org/dig"
 )
 
@@ -9,7 +11,7 @@ type Outbound struct {
 
 	//Cache        cache.Cache
 	//Messaging    messaging.Messaging
-	//Repositories repositories.Repositories
+	Repositories repositories.Repositories
 	//WebServices  webservices.WebServices
 }
 
@@ -20,9 +22,9 @@ func Register(container *dig.Container) error {
 	//if err := messaging.Register(container); err != nil {
 	//	return fmt.Errorf("[DI] error provide outbound messaging: %+v", err)
 	//}
-	//if err := repositories.Register(container); err != nil {
-	//	return fmt.Errorf("[DI] error provide outbound repositories: %+v", err)
-	//}
+	if err := repositories.Register(container); err != nil {
+		return fmt.Errorf("[DI] error provide outbound repositories: %+v", err)
+	}
 	//if err := webservices.Register(container); err != nil {
 	//	return fmt.Errorf("[DI] error provide outbound webservice: %+v", err)
 	//}
