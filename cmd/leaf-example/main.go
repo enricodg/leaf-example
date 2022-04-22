@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"github.com/enricodg/leaf-example/internal/leaf-example/inbound"
+	"github.com/enricodg/leaf-example/internal/inbound"
 	pkgDi "github.com/enricodg/leaf-example/pkg/di"
 	pkgResource "github.com/enricodg/leaf-example/pkg/resource"
 	leafRunner "github.com/paulusrobin/leaf-utilities/appRunner"

@@ -6,17 +6,17 @@ require (
 	github.com/getsentry/sentry-go v0.13.0
 	github.com/go-playground/universal-translator v0.18.0
 	github.com/labstack/echo/v4 v4.7.2
-	github.com/paulusrobin/leaf-utilities/appRunner v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/common v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/config v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/logger/integrations/logrus v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/logger/logger v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/tracer/integrations/newRelic v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/tracer/integrations/sentry v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/tracer/tracer v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/translator v0.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/validator/integrations/v10 v10.0.0-20220413144204-972ab9e3b19d
-	github.com/paulusrobin/leaf-utilities/validator/validator v0.0.0-20220413144204-972ab9e3b19d
+	github.com/paulusrobin/leaf-utilities/appRunner v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/common v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/config v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/logger/integrations/logrus v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/logger/logger v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/tracer/integrations/newRelic v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/tracer/integrations/sentry v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/tracer/tracer v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/translator v0.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/validator/integrations/v10 v10.0.0-20220422095901-cbdbd676731a
+	github.com/paulusrobin/leaf-utilities/validator/validator v0.0.0-20220422095901-cbdbd676731a
 	go.uber.org/dig v1.14.1
 )
 
@@ -49,11 +49,11 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/newrelic/go-agent/v3 v3.15.2 // indirect
 	github.com/newrelic/go-agent/v3/integrations/nrlogrus v1.0.1 // indirect
-	github.com/paulusrobin/leaf-utilities/encoding/json v0.0.0-20220413055116-5143d33efda6 // indirect
-	github.com/paulusrobin/leaf-utilities/mandatory v0.0.0-20220413081215-d62a524206c5 // indirect
-	github.com/paulusrobin/leaf-utilities/messageQueue/messageQueue v0.0.0-20220413074846-21473905e5e1 // indirect
-	github.com/paulusrobin/leaf-utilities/time v0.0.0-20220413055116-5143d33efda6 // indirect
-	github.com/paulusrobin/leaf-utilities/token v0.0.0-20220413080835-27cfc1be7f63 // indirect
+	github.com/paulusrobin/leaf-utilities/encoding/json v0.0.0-20220420070753-f0289b1e394b // indirect
+	github.com/paulusrobin/leaf-utilities/mandatory v0.0.0-20220420070336-2df28f149cda // indirect
+	github.com/paulusrobin/leaf-utilities/messageQueue/messageQueue v0.0.0-20220413144204-972ab9e3b19d // indirect
+	github.com/paulusrobin/leaf-utilities/time v0.0.0-20220420070753-f0289b1e394b // indirect
+	github.com/paulusrobin/leaf-utilities/token v0.0.0-20220413144204-972ab9e3b19d // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rifflock/lfshook v0.0.0-20180920164130-b9218ef580f5 // indirect

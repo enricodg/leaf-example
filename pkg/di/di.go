@@ -1,8 +1,8 @@
 package pkgDi
 
 import (
-	"github.com/enricodg/leaf-example/internal/leaf-example/outbound"
-	"github.com/enricodg/leaf-example/internal/leaf-example/usecases"
+	"github.com/enricodg/leaf-example/internal/outbound"
+	"github.com/enricodg/leaf-example/internal/usecases"
 	pkgConfig "github.com/enricodg/leaf-example/pkg/config"
 	pkgResource "github.com/enricodg/leaf-example/pkg/resource"
 	"go.uber.org/dig"
@@ -34,7 +34,7 @@ func Container() (*dig.Container, error) {
 			outer = err
 			return
 		}
-		
+
 		if err := usecases.Register(container); err != nil {
 			outer = err
 			return

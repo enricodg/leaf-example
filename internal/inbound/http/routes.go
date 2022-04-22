@@ -1,7 +1,7 @@
 package http
 
 import (
-	"github.com/enricodg/leaf-example/internal/leaf-example/inbound/http/health"
+	"github.com/enricodg/leaf-example/internal/inbound/http/health"
 	pkgResource "github.com/enricodg/leaf-example/pkg/resource"
 	"github.com/labstack/echo/v4"
 	leafHttpMiddleware "github.com/paulusrobin/leaf-utilities/appRunner/middleware/http"
